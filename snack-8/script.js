@@ -21,3 +21,13 @@ const students = [
 
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
+
+const student = students.find(function (x) {
+  return x.name === `Marco Lanci`;
+});
+
+const studentClass = student.class;
+
+console.log(studentClass);
+
+// uno s- questa parte, inizialmente pensavo di farlo con index... grazie stackoverflow
